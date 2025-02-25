@@ -2,7 +2,7 @@
     --blue-grey-50: #DFE1E2;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
-    --blue-grey-800: #EDEDED;
+    --blue-grey-800: #485A64;
     --blue-grey-900: #263238;
 }
 
@@ -19,30 +19,34 @@ header, footer {
     padding: 2rem 2rem;
 }
 
-h1, footer h2 {
-    font-family: "libre baskerville" , serif;
-    font-size: 4rem;
-    font-weight: 500;
-}
+
 
 h2 {
     font-family: "libre baskerville" , serif;
     font-weight: 500;
     font-size: 2rem;
 }
+
+h1, footer h2 {
+    font-family: "libre baskerville" , serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
 header img, 
 footer img {
-    width: 5rem;
-    height: 3rem;
+    width: 6rem;
+    height: 4rem;
 }
 
 header div, footer div {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 nav {
-    padding: 2.5 rem;
+    padding: 1.5rem 0rem .5rem 0rem;
 }
 header a, footer a {
     text-decoration: none;
@@ -74,8 +78,10 @@ header a, footer a {
 }
 
 .section1 img{
-    padding: 4em 2rem 4rem 2rem;
-    border-radius: 2rem;
+    max-width:90%;
+    margin: 1em 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    padding: 3rem 0rem 2rem 0rem;
 }
 
 .star {
@@ -86,6 +92,7 @@ header a, footer a {
 
 .section2 {
     background-color: white;
+    margin-top: 4rem;
 }
 
 .section2 h2 {
@@ -94,12 +101,145 @@ header a, footer a {
 }
 
 .section2 p {
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 0rem 1rem 0rem 2rem;
+    padding-bottom: 2rem;
 }
 .section3 {
-    background-color: var(--blue-grey-200)
+    background-color: var(--blue-grey-200);
+    color: white;
+    padding: 1rem 0rem 3rem 0rem;
+}
+
+.section3 h2 {
+    padding: 2rem;
 }
 
 .section4 {
     background-color: var(--blue-grey-100);
+    padding: 3rem 0rem 3rem 0rem;
 }
+
+.section4 h2{
+    margin: 0rem 2rem 1rem 2rem;
+}
+
+.section4 h3{
+    margin: 1rem 1rem 0rem 1rem;
+}
+
+.section4 p{
+    margin: 1rem 1rem 3rem 1rem;
+}
+
+.section4 div{
+    text-align: left;
+    justify-content: center;
+}
+
+.section4 div li {
+    padding:0.5rem 1rem;
+}
+
+.section4 div img{
+    max-width: 90%;
+    height: auto;
+    margin: 1em 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+
+span.bold {
+    font-weight: 700;
+}
+
+.starleft {
+    font-family:"liber baskerville";
+    font-weight: strong;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.section5 {
+    background-color: var(--blue-grey-800);
+    padding: 3rem 2rem 3rem 2rem;
+}
+
+.section5 div {
+
+    background-color: white;
+    padding: 2rem 2em 6rem 2rem;
+    border-radius: 15px;
+}
+
+.section5 a {
+    background-color: var(--blue-grey-900);
+    color: white;
+    text-decoration: none;
+    padding: 1.25rem 1.25rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+
+.section5 div p {
+    padding-bottom: 2rem;
+}
+
+footer {
+    color: white;
+}
+footer div {
+    text-align: left;
+    padding: 1rem 1rem;
+}
+footer div h2{
+    margin: 0rem 0rem;
+}
+
+footer p {
+    font-size: .75rem;
+    font-weight: lighter;
+    margin: 0rem 1rem 2rem 1rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between; /* Spread out the columns evenly */
+    padding: 1rem 0;
+    text-align: left;
+}
+
+footer nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    flex: 1; 
+}
+
+footer nav li {
+    padding: 0.5rem 0; 
+    margin: 0; 
+    font-size: 0.75rem;
+}
+
+footer nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer nav ul li:first-child {
+    padding-left: 1rem; 
+    font-weight: 700;
+    font-size: .85rem;
+    
+}
+
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+
+

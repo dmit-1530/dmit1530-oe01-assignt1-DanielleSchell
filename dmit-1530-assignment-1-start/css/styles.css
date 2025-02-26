@@ -92,6 +92,7 @@ header a{
 .section2 {
     background-color: white;
     margin-top: 4rem;
+    padding: 0rem 1rem 0rem 1rem;
 }
 
 .section2 h2 {
@@ -100,7 +101,6 @@ header a{
 }
 
 .section2 p {
-    margin: 0rem 1rem 0rem 2rem;
     padding-bottom: 2rem;
 }
 .section3 {
@@ -116,6 +116,7 @@ header a{
 .section4 {
     background-color: var(--blue-grey-100);
     padding: 3rem 0rem 3rem 0rem;
+    align-items: center;
 }
 
 .section4 h2{
@@ -237,21 +238,68 @@ footer nav ul li:first-child {
 
 
 @media screen and (min-width: 768px) {
+    
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title {
 
-    .container1 {
+        display: flex;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .column {
+        width: 48%;
         display: flex;
         flex-direction: column;
-        gap: 10px;
     }
 
-    .item1 {
-        align-items: right;
+    .container1, .container2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 
-    .item2 {
-
+    .item, .item2{
+        width: 48%;
     }
 
+    .container2 .item {
+        order: 2;
+    }
+
+    .container2 .item2 {
+        order: 1;
+    }
+
+    .footercontainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .titlefooter {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    footer nav {
+        padding-top: 0rem;
+    }
 
 }
 

@@ -69,6 +69,26 @@ header a{
     border-radius: 0.5rem;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%;
+    margin: 0rem 0rem;
+    
+}
+
+figure img {
+    width: 90%;
+    height: auto;
+}
+
+figcaption {
+    text-align: left;
+    width: 90%;
+    padding: 0rem 0rem 2rem 1rem;
+}
+
 .section1 h3, .section1 p {
     margin: 0rem 1rem 2rem 1rem;
     text-align: left;
@@ -83,7 +103,7 @@ header a{
 
 .section3 {
     background-color: var(--blue-grey-200);
-    padding: 1rem 1.5rem;
+    padding: 2rem 1.5rem;
     color: white;
     text-align: left;
 
@@ -108,7 +128,9 @@ header a{
     padding-left: 0.5rem;
 }
 
-
+.bold {
+    font-weight: 700;
+}
 
 
 footer {
@@ -164,6 +186,106 @@ footer nav ul li:first-child {
 
 
 @media screen and (min-width: 768px) {
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title {
+
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        gap: 40px;
+        padding-right: 1rem;
+    }
+
+    
+    .container1, .container2 {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+        gap: 1rem; 
+    }
+
+    .container1 .item, 
+    .container2 .item2 {
+        flex: 1;
+    }
+
+    .container1 .item1, 
+    .container2 .item3 {
+        flex: 1; 
+    }
+
+    
+    .container2 {
+        flex-direction: row-reverse;
+    }
+
+   
+    .item img, .item2 img {
+        width: 100%; 
+        height: auto;
+
+    }
+
+    .item1, .item3 {
+        flex: 1;
+    }
+    
+    .item, .item2 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section3container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .section3 h2 {
+        text-align: center;
+    }
+
+    .section4container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .column {
+        width: 48%;
+    }
+
+    .section4 li {
+        padding: 0.25rem 0rem;
+    }
+
+
+    .footercontainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .titlefooter {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    footer nav {
+        padding-top: 0rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {
